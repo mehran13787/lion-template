@@ -42,8 +42,8 @@ document.addEventListener("DOMContentLoaded", function () {
           padding: "2rem",
         },
         360: {
-          perPage: 1,
-          padding: "4rem",
+          perPage: 2,
+          padding: "0rem",
         },
       },
     });
