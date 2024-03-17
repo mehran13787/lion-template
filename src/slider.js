@@ -1,3 +1,5 @@
+import Splide from "@splidejs/splide";
+
 document.addEventListener("DOMContentLoaded", function () {
   var splideCheck = document.getElementsByClassName("splide");
   if (splideCheck.length) {
