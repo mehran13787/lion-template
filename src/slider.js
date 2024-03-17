@@ -35,7 +35,11 @@ document.addEventListener("DOMContentLoaded", function () {
         },
         470: {
           perPage: 2,
-          padding: "1rem",
+          padding: "4rem",
+        },
+        450: {
+          perPage: 2,
+          padding: "2rem",
         },
         360: {
           perPage: 1,
