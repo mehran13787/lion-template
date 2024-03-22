@@ -5,6 +5,7 @@ module.exports = {
     "index.html",
     "articles.html",
     "article-detail.html",
+    "product-detail.html",
     "./src/**/*.{js,jsx,ts,tsx,html}",
   ],
   theme: {
