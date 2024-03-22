@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 a {
-  @apply text-blue-500 hover:text-blue-400 hover:underline transition-all;
+  @apply transition-all hover:text-blue-400;
 }
 
 @font-face {
