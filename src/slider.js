@@ -63,8 +63,8 @@ document.addEventListener("DOMContentLoaded", function () {
     splide1.mount();
 
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-    // seconde-carousel
-    var splide2 = new Splide("#seconde-carousel-splide", {
+    // second-carousel
+    var splide2 = new Splide("#second-carousel-splide", {
       type: "loop",
       perPage: 4,
       arrows: false,
@@ -95,13 +95,13 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     document
-      .querySelector(".seconde-carousel-next")
+      .querySelector(".second-carousel-next")
       .addEventListener("click", (e) => {
         splide2.go("+1");
       });
 
     document
-      .querySelector(".seconde-carousel-prev")
+      .querySelector(".second-carousel-prev")
       .addEventListener("click", (e) => {
         splide2.go("-1");
       });
@@ -149,40 +149,41 @@ document.addEventListener("DOMContentLoaded", function () {
       });
 
     splide3.mount();
+
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    // fourth-carousel
+    var splide4 = new Splide("#fourth-carousel-splide", {
+      type: "loop",
+      perPage: 4,
+      arrows: false,
+      pagination: false,
+      lazyLoad: "nearby",
+      breakpoints: {
+        900: {
+          perPage: 3,
+        },
+        700: {
+          perPage: 2,
+        },
+        570: {
+          perPage: 1,
+        },
+      },
+    });
+
+    document
+      .querySelector(".fourth-carousel-next")
+      .addEventListener("click", (e) => {
+        splide4.go("+1");
+      });
+
+    document
+      .querySelector(".fourth-carousel-prev")
+      .addEventListener("click", (e) => {
+        splide4.go("-1");
+      });
+
+    splide4.mount();
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
   }
-
-  ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-  // fourth-carousel
-  var splide4 = new Splide("#fourth-carousel-splide", {
-    type: "loop",
-    perPage: 4,
-    arrows: false,
-    pagination: false,
-    lazyLoad: "nearby",
-    breakpoints: {
-      900: {
-        perPage: 3,
-      },
-      700: {
-        perPage: 2,
-      },
-      570: {
-        perPage: 1,
-      },
-    },
-  });
-
-  document
-    .querySelector(".fourth-carousel-next")
-    .addEventListener("click", (e) => {
-      splide4.go("+1");
-    });
-
-  document
-    .querySelector(".fourth-carousel-prev")
-    .addEventListener("click", (e) => {
-      splide4.go("-1");
-    });
-
-  splide4.mount();
 });
