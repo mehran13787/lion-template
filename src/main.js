@@ -83,4 +83,22 @@ document.addEventListener("DOMContentLoaded", function () {
     splide1.mount();
   }
   ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+  var main = new Splide("#main-carousel", {
+    type: "fade",
+    rewind: true,
+    pagination: true,
+    arrows: false,
+  });
+  var tumbnail = new Splide("#thumbnail-carousel", {
+    fixedWidth: 90,
+    gap: 10,
+    rewind: true,
+    pagination: false,
+    isNavigation: true,
+    arrows: false,
+  });
+
+  tumbnail.mount();
+  main.mount();
+  main.sync(tumbnail);
 });

@@ -70,3 +70,17 @@ body {
   justify-content: start !important;
   left: 20px !important;
 }
+
+button.splide__pagination__page.is-active {
+  background-color: #256cfa;
+  opacity: 1;
+}
+
+button.splide__pagination__page {
+  background-color: #256cfa;
+  opacity: 30%;
+}
+
+.splide__track--nav > .splide__list > .splide__slide.is-active {
+  border: none !important;
+}
