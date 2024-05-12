@@ -101,4 +101,11 @@ document.addEventListener("DOMContentLoaded", function () {
   tumbnail.mount();
   main.mount();
   main.sync(tumbnail);
+  //////////////////////////////////////////
+
+  // let button;
+  // button = document.getElementsByClassName(".header-category");
+  // button.addEventListener("click", () => {
+  //   console.log("x");
+  // });
 });
