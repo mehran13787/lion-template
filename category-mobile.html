@@ -10,6 +10,13 @@
       rel="stylesheet"
       href="./node_modules/@splidejs/splide/dist/css/splide.min.css"
     />
+
+    <script type="module" src="./src/main.js"></script>
+    <script
+      type="module"
+      src="./node_modules/@splidejs/splide/dist/js/splide.min.js"
+    ></script>
+    <script type="module" src="./src/slider.js"></script>
   </head>
   <body>
     <div>
@@ -363,49 +370,42 @@
         </section>
       </div>
     </div>
-
-    <script type="module" src="./src/main.js"></script>
-    <script
-      type="module"
-      src="./node_modules/@splidejs/splide/dist/js/splide.min.js"
-    ></script>
-    <script type="module" src="./src/slider.js"></script>
-    <script>
-      function expandfirstLayer() {
-        var firstLayerArrowDown = document.querySelector(
-          ".first-layer-arrow-down"
-        );
-        var firstlayerText = document.querySelector(".first-layer-text");
-        var secondlayer = document.querySelector(".second-layer");
-
-        if (firstLayerArrowDown.classList.contains("rotate-0")) {
-          firstLayerArrowDown.classList.replace("rotate-0", "rotate-180");
-          firstlayerText.classList.replace("text-[#0F1729]", "text-[#256CFA]");
-          secondlayer.classList.replace("hidden", "block");
-        } else {
-          firstLayerArrowDown.classList.replace("rotate-180", "rotate-0");
-          firstlayerText.classList.replace("text-[#256CFA]", "text-[#0F1729]");
-          secondlayer.classList.replace("block", "hidden");
-        }
-      }
-      function expandsecondLayer(event) {
-        event.stopPropagation();
-        var secondLayerArrowDown = document.querySelector(
-          ".second-layer-arrow-down"
-        );
-        var thirdlayer = document.querySelector(".third-layer");
-        var secondlayerText = document.querySelector(".second-layer-text");
-
-        if (secondLayerArrowDown.classList.contains("rotate-0")) {
-          secondLayerArrowDown.classList.replace("rotate-0", "rotate-180");
-          secondlayerText.classList.replace("text-[#0F1729]", "text-[#256CFA]");
-          thirdlayer.classList.replace("hidden", "block");
-        } else {
-          secondLayerArrowDown.classList.replace("rotate-180", "rotate-0");
-          secondlayerText.classList.replace("text-[#256CFA]", "text-[#0F1729]");
-          thirdlayer.classList.replace("block", "hidden");
-        }
-      }
-    </script>
   </body>
+  <script>
+    function expandfirstLayer() {
+      var firstLayerArrowDown = document.querySelector(
+        ".first-layer-arrow-down"
+      );
+      var firstlayerText = document.querySelector(".first-layer-text");
+      var secondlayer = document.querySelector(".second-layer");
+
+      if (firstLayerArrowDown.classList.contains("rotate-0")) {
+        firstLayerArrowDown.classList.replace("rotate-0", "rotate-180");
+        firstlayerText.classList.replace("text-[#0F1729]", "text-[#256CFA]");
+        secondlayer.classList.replace("hidden", "block");
+      } else {
+        firstLayerArrowDown.classList.replace("rotate-180", "rotate-0");
+        firstlayerText.classList.replace("text-[#256CFA]", "text-[#0F1729]");
+        secondlayer.classList.replace("block", "hidden");
+      }
+    }
+    function expandsecondLayer(event) {
+      event.stopPropagation();
+      var secondLayerArrowDown = document.querySelector(
+        ".second-layer-arrow-down"
+      );
+      var thirdlayer = document.querySelector(".third-layer");
+      var secondlayerText = document.querySelector(".second-layer-text");
+
+      if (secondLayerArrowDown.classList.contains("rotate-0")) {
+        secondLayerArrowDown.classList.replace("rotate-0", "rotate-180");
+        secondlayerText.classList.replace("text-[#0F1729]", "text-[#256CFA]");
+        thirdlayer.classList.replace("hidden", "block");
+      } else {
+        secondLayerArrowDown.classList.replace("rotate-180", "rotate-0");
+        secondlayerText.classList.replace("text-[#256CFA]", "text-[#0F1729]");
+        thirdlayer.classList.replace("block", "hidden");
+      }
+    }
+  </script>
 </html>

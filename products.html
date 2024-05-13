@@ -11,6 +11,12 @@
       rel="stylesheet"
       href="./node_modules/@splidejs/splide/dist/css/splide.min.css"
     />
+    <script type="module" src="./src/main.js"></script>
+    <script
+      type="module"
+      src="./node_modules/@splidejs/splide/dist/js/splide.min.js"
+    ></script>
+    <script type="module" src="./src/slider.js"></script>
   </head>
   <body>
     <div>
@@ -1050,43 +1056,37 @@
         </section>
       </div>
     </div>
-    <script>
-      var items = document.querySelectorAll(".filter-item");
-      items.forEach(function (item) {
-        item.addEventListener("click", function () {
-          const button = item.querySelector(".check-box");
-          const text = item.querySelector(".filter-text");
-          if (item.classList.contains("border-[#0000001F]")) {
-            item.classList.replace("border-[#0000001F]", "border-[#256CFA4D]");
-            item.classList.add(
-              "bg-gradient-to-l",
-              "from-[#256CFA33]",
-              "to-[#256CFA00]"
-            );
-          } else {
-            item.classList.toggle("border-[#256CFA4D]");
-            item.classList.toggle("bg-gradient-to-l");
-          }
-
-          if (button.classList.contains("bg-white")) {
-            button.classList.replace("bg-white", "bg-[#256CFA]");
-          } else {
-            button.classList.replace("bg-[#256CFA]", "bg-white");
-          }
-
-          if (text.classList.contains("text-black")) {
-            text.classList.replace("text-black", "text-[#256CFA]");
-          } else {
-            text.classList.replace("text-[#256CFA]", "text-black");
-          }
-        });
-      });
-    </script>
-    <script type="module" src="./src/main.js"></script>
-    <script
-      type="module"
-      src="./node_modules/@splidejs/splide/dist/js/splide.min.js"
-    ></script>
-    <script type="module" src="./src/slider.js"></script>
   </body>
+  <script>
+    var items = document.querySelectorAll(".filter-item");
+    items.forEach(function (item) {
+      item.addEventListener("click", function () {
+        const button = item.querySelector(".check-box");
+        const text = item.querySelector(".filter-text");
+        if (item.classList.contains("border-[#0000001F]")) {
+          item.classList.replace("border-[#0000001F]", "border-[#256CFA4D]");
+          item.classList.add(
+            "bg-gradient-to-l",
+            "from-[#256CFA33]",
+            "to-[#256CFA00]"
+          );
+        } else {
+          item.classList.toggle("border-[#256CFA4D]");
+          item.classList.toggle("bg-gradient-to-l");
+        }
+
+        if (button.classList.contains("bg-white")) {
+          button.classList.replace("bg-white", "bg-[#256CFA]");
+        } else {
+          button.classList.replace("bg-[#256CFA]", "bg-white");
+        }
+
+        if (text.classList.contains("text-black")) {
+          text.classList.replace("text-black", "text-[#256CFA]");
+        } else {
+          text.classList.replace("text-[#256CFA]", "text-black");
+        }
+      });
+    });
+  </script>
 </html>
