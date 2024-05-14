@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", function () {
       firstlayerText.classList.replace("text-[#256CFA]", "text-[#0F1729]");
       item.classList.replace("open", "close");
       item.classList.remove(
-        "bg-gradient-to-r",
+        "bg-gradient-to-l",
         "from-[#FFFFFF1F]",
         "to-[#FFFFFF]",
         "border-[1px]",
@@ -82,7 +82,7 @@ document.addEventListener("DOMContentLoaded", function () {
         firstlayerText.classList.replace("text-[#0F1729]", "text-[#256CFA]");
         item.classList.replace("close", "open");
         item.classList.add(
-          "bg-gradient-to-r",
+          "bg-gradient-to-l",
           "from-[#FFFFFF1F]",
           "to-[#FFFFFF]",
           "border-[1px]",
@@ -94,7 +94,7 @@ document.addEventListener("DOMContentLoaded", function () {
         firstlayerText.classList.replace("text-[#256CFA]", "text-[#0F1729]");
         item.classList.replace("open", "close");
         item.classList.remove(
-          "bg-gradient-to-r",
+          "bg-gradient-to-l",
           "from-[#FFFFFF1F]",
           "to-[#FFFFFF]",
           "border-[1px]",
