@@ -33,25 +33,24 @@ document.addEventListener("DOMContentLoaded", function () {
       displayCout.innerHTML = productCounter.decrementCounter();
     };
   }
-  if (document.getElementById("main-page")) {
-    const categoryButton = document.getElementById("header-category");
-    const categorySection = document.getElementById("category-section");
-    categoryButton.addEventListener("click", () => {
-      if (categorySection.classList.contains("hidden")) {
-        categorySection.classList.replace("hidden", "block");
-      } else {
-        categorySection.classList.replace("block", "hidden");
-      }
-    });
-    categorySection.addEventListener("click", (e) => {
-      if (e.target.nodeName === "DIV") return;
-      if (categorySection.classList.contains("hidden")) {
-        categorySection.classList.replace("hidden", "block");
-      } else {
-        categorySection.classList.replace("block", "hidden");
-      }
-    });
-  }
+  //////////////////////////////////////////////////////////////////////////////////////////////////////
+  const categoryButton = document.getElementById("header-category");
+  const categorySection = document.getElementById("category-section");
+  categoryButton.addEventListener("click", () => {
+    if (categorySection.classList.contains("hidden")) {
+      categorySection.classList.replace("hidden", "block");
+    } else {
+      categorySection.classList.replace("block", "hidden");
+    }
+  });
+  categorySection.addEventListener("click", (e) => {
+    if (e.target.nodeName === "DIV") return;
+    if (categorySection.classList.contains("hidden")) {
+      categorySection.classList.replace("hidden", "block");
+    } else {
+      categorySection.classList.replace("block", "hidden");
+    }
+  });
 
   const categoryCards = document.querySelectorAll(".category-card");
 
