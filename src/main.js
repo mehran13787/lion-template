@@ -37,18 +37,22 @@ document.addEventListener("DOMContentLoaded", function () {
   const categoryButton = document.getElementById("header-category");
   const categorySection = document.getElementById("category-section");
   categoryButton.addEventListener("click", () => {
+    console.log("c");
     if (categorySection.classList.contains("hidden")) {
       categorySection.classList.replace("hidden", "block");
+      this.body.classList.add("fixed");
     } else {
       categorySection.classList.replace("block", "hidden");
+      this.body.classList.remove("fixed");
     }
   });
   categorySection.addEventListener("click", (e) => {
-    if (e.target.nodeName === "DIV") return;
+    if (e.target.nodeName !== "SECTION") return;
     if (categorySection.classList.contains("hidden")) {
       categorySection.classList.replace("hidden", "block");
     } else {
       categorySection.classList.replace("block", "hidden");
+      this.body.classList.remove("fixed");
     }
   });
 
