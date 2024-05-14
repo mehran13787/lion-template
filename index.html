@@ -19,7 +19,7 @@
   </head>
   <body>
     <div id="main-page">
-      <div class="mx-auto max-w-[1440px]">
+      <div class="relative mx-auto max-w-[1440px]">
         <header
           style="
             background: linear-gradient(
@@ -95,7 +95,8 @@
               class="me-[60px] ms-[40px] h-[22.5px] w-[1px] bg-[#0F17291F]"
             ></div>
             <button
-              class="header-category pe-[8px] ps-[15px] flex items-center justify-between py-[11px]"
+              id="header-category"
+              class="pe-[8px] ps-[15px] flex items-center justify-between py-[11px]"
             >
               <p class="me-[11px] text-[#256CFA]">category</p>
               <img
@@ -105,7 +106,136 @@
             </button>
           </div>
         </header>
-
+        <section
+          id="category-section"
+          class="absolute z-40 h-full w-full bg-[rgb(0,0,0,.3)]"
+        >
+          <div class="relative w-full" id="category-section-content">
+            <div
+              class="end-[48px] absolute grid h-[600px] w-[80%] grid-cols-3 rounded-[16px] bg-gradient-to-r from-[#FFFFFF] to-[#FFFFFFC4] px-6"
+            >
+              <div></div>
+              <div></div>
+              <ul class="flex flex-col items-end overflow-y-scroll">
+                <li
+                  class="category-card close my-3 flex h-[52px] w-[273px] cursor-pointer items-center justify-end rounded-[24px] px-2"
+                >
+                  <div class="flex items-center">
+                    <h2
+                      class="layer-text text-[14px] font-[500] text-[#0F1729]"
+                    >
+                      Integrated Circuits - ICs
+                    </h2>
+                    <div
+                      class="ms-3 flex h-9 w-9 items-center justify-center rounded-[12px] bg-[#e9f5f9]"
+                    >
+                      <img
+                        src="src/assets/icons/heart-gray.svg"
+                        class="h-5 w-5"
+                      />
+                    </div>
+                  </div>
+                </li>
+                <li
+                  class="category-card close my-3 flex h-[52px] w-[273px] cursor-pointer items-center justify-end rounded-[24px] px-2"
+                >
+                  <div class="flex items-center">
+                    <h2
+                      class="layer-text text-[14px] font-[500] text-[#0F1729]"
+                    >
+                      Integrated Circuits - ICs
+                    </h2>
+                    <div
+                      class="ms-3 flex h-9 w-9 items-center justify-center rounded-[12px] bg-[#e9f5f9]"
+                    >
+                      <img
+                        src="src/assets/icons/heart-gray.svg"
+                        class="h-5 w-5"
+                      />
+                    </div>
+                  </div>
+                </li>
+                <li
+                  class="category-card close my-3 flex h-[52px] w-[273px] cursor-pointer items-center justify-end rounded-[24px] px-2"
+                >
+                  <div class="flex items-center">
+                    <h2
+                      class="layer-text text-[14px] font-[500] text-[#0F1729]"
+                    >
+                      Integrated Circuits - ICs
+                    </h2>
+                    <div
+                      class="ms-3 flex h-9 w-9 items-center justify-center rounded-[12px] bg-[#e9f5f9]"
+                    >
+                      <img
+                        src="src/assets/icons/heart-gray.svg"
+                        class="h-5 w-5"
+                      />
+                    </div>
+                  </div>
+                </li>
+                <li
+                  class="category-card close my-3 flex h-[52px] w-[273px] cursor-pointer items-center justify-end rounded-[24px] px-2"
+                >
+                  <div class="flex items-center">
+                    <h2
+                      class="layer-text text-[14px] font-[500] text-[#0F1729]"
+                    >
+                      Integrated Circuits - ICs
+                    </h2>
+                    <div
+                      class="ms-3 flex h-9 w-9 items-center justify-center rounded-[12px] bg-[#e9f5f9]"
+                    >
+                      <img
+                        src="src/assets/icons/heart-gray.svg"
+                        class="h-5 w-5"
+                      />
+                    </div>
+                  </div>
+                </li>
+                <li
+                  class="category-card close my-3 flex h-[52px] w-[273px] cursor-pointer items-center justify-end rounded-[24px] px-2"
+                >
+                  <div class="flex items-center">
+                    <h2
+                      class="layer-text text-[14px] font-[500] text-[#0F1729]"
+                    >
+                      Integrated Circuits - ICs
+                    </h2>
+                    <div
+                      class="ms-3 flex h-9 w-9 items-center justify-center rounded-[12px] bg-[#e9f5f9]"
+                    >
+                      <img
+                        src="src/assets/icons/heart-gray.svg"
+                        class="h-5 w-5"
+                      />
+                    </div>
+                  </div>
+                </li>
+                <li
+                  class="category-card close my-3 flex h-[52px] w-[273px] cursor-pointer items-center justify-end rounded-[24px] px-2"
+                >
+                  =
+                  <div class="flex items-center">
+                    <h2
+                      class="layer-text text-[14px] font-[500] text-[#0F1729]"
+                    >
+                      Integrated Circuits - ICs
+                    </h2>
+                    <div
+                      class="ms-3 flex h-9 w-9 items-center justify-center rounded-[12px] bg-[#e9f5f9]"
+                    >
+                      <img
+                        src="src/assets/icons/heart-gray.svg"
+                        class="h-5 w-5"
+                      />
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
         <section
           id="zero-carousel"
           class="mx-4 mt-[11px] lg:mx-[0px]"
