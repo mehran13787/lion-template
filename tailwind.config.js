@@ -8,7 +8,8 @@ module.exports = {
     "product-details.html",
     "products.html",
     "category-mobile.html",
-    "products-mobile.html",
+    "products-mobile",
+    "shopping-cart.html",
     "./src/**/*.{js,jsx,ts,tsx,html}",
   ],
   theme: {
