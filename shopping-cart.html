@@ -106,7 +106,7 @@
           </div>
         </header>
 
-        <main class="flex justify-center lg:mt-[30px]">
+        <main class="flex items-start justify-center lg:mt-[30px]">
           <!-- sidebar -->
           <div
             id="sidebar-first-step"
@@ -117,7 +117,7 @@
                 #ffffff 91.4%
               );
             "
-            class="me-6 hidden w-[317px] flex-col items-center rounded-[16px] px-8 py-5 shadow-[8px_20px_250px_0px_#0000000F] lg:flex"
+            class="border-e-transparent hidden w-[317px] flex-col items-center rounded-[16px] border-[1px] border-[#00000014] border-t-transparent px-8 py-5 shadow-[8px_20px_250px_0px_#0000000F] lg:flex"
           >
             <div
               class="flex w-full justify-between border-b-[1px] border-dashed border-[#6161615e] pb-[21px]"
@@ -155,7 +155,7 @@
               </p>
             </div>
           </div>
-          <div class="grow">
+          <div class="ms-6 grow">
             <!-- wizard -->
             <div
               id="wizard"
@@ -173,7 +173,35 @@
               >
                 <img
                   class="w-5 lg:order-2 lg:w-6"
-                  src="./src/assets/icons/shop-card.svg"
+                  src="./src/assets/icons/credit-card.svg"
+                />
+                <p
+                  class="lg:me-4 text-[13px] font-[500] text-[#616161] lg:text-[16px]"
+                >
+                  Pay
+                </p>
+              </div>
+              <div class="h-[1px] grow bg-[#0F17291F] lg:mx-5"></div>
+              <div
+                class="flex flex-col items-center justify-center lg:flex-row"
+              >
+                <img
+                  class="w-5 lg:order-2 lg:w-6"
+                  src="./src/assets/icons/paper.svg"
+                />
+                <p
+                  class="lg:me-4 text-[13px] font-[500] text-[#616161] lg:text-[16px]"
+                >
+                  Confirm
+                </p>
+              </div>
+              <div class="h-[1px] grow bg-[#0F17291F] lg:mx-5"></div>
+              <div
+                class="flex flex-col items-center justify-center lg:flex-row"
+              >
+                <img
+                  class="w-5 lg:order-2 lg:w-6"
+                  src="./src/assets/icons/truck.svg"
                 />
                 <p
                   class="lg:me-4 text-[13px] font-[500] text-[#616161] lg:text-[16px]"
@@ -187,830 +215,873 @@
               >
                 <img
                   class="w-5 lg:order-2 lg:w-6"
-                  src="./src/assets/icons/shop-card.svg"
+                  src="./src/assets/icons/shopping-cart-blue.svg"
                 />
                 <p
-                  class="lg:me-4 text-[13px] font-[500] text-[#616161] lg:text-[16px]"
+                  class="lg:me-4 text-[13px] font-[700] lg:text-[20px] lg:font-[600]"
                 >
-                  Information
-                </p>
-              </div>
-              <div class="h-[1px] grow bg-[#0F17291F] lg:mx-5"></div>
-              <div
-                class="flex flex-col items-center justify-center lg:flex-row"
-              >
-                <img
-                  class="w-5 lg:order-2 lg:w-6"
-                  src="./src/assets/icons/shop-card.svg"
-                />
-                <p
-                  class="lg:me-4 text-[13px] font-[500] text-[#616161] lg:text-[16px]"
-                >
-                  Information
-                </p>
-              </div>
-              <div class="h-[1px] grow bg-[#0F17291F] lg:mx-5"></div>
-              <div
-                class="flex flex-col items-center justify-center lg:flex-row"
-              >
-                <img
-                  class="w-5 lg:order-2 lg:w-6"
-                  src="./src/assets/icons/shop-card.svg"
-                />
-                <p
-                  class="lg:me-4 text-[13px] font-[500] text-[#616161] lg:text-[16px]"
-                >
-                  Information
+                  Shopping Cart
                 </p>
               </div>
             </div>
-            <!-- table header -->
-            <header class="mt-6 hidden grid-cols-12 gap-x-6 lg:grid">
-              <div
-                style="
-                  background: linear-gradient(
-                    180deg,
-                    rgba(245, 243, 243, 0.5) 16.35%,
-                    rgba(225, 225, 225, 0.5) 100%
-                  );
-                "
-                class="col-span-2 rounded-[25px] py-2 text-center text-[14px] font-[500]"
-              >
-                Total
+            <!-- first-step-main -->
+            <main>
+              <!-- table header -->
+              <header class="mt-6 hidden grid-cols-12 gap-x-6 lg:grid">
+                <div
+                  style="
+                    background: linear-gradient(
+                      180deg,
+                      rgba(245, 243, 243, 0.5) 16.35%,
+                      rgba(225, 225, 225, 0.5) 100%
+                    );
+                  "
+                  class="col-span-2 rounded-[25px] py-2 text-center text-[14px] font-[500]"
+                >
+                  Total
+                </div>
+                <div
+                  style="
+                    background: linear-gradient(
+                      180deg,
+                      rgba(245, 243, 243, 0.5) 16.35%,
+                      rgba(225, 225, 225, 0.5) 100%
+                    );
+                  "
+                  class="col-span-2 rounded-[25px] py-2 text-center text-[14px] font-[500]"
+                >
+                  base price
+                </div>
+                <div
+                  style="
+                    background: linear-gradient(
+                      180deg,
+                      rgba(245, 243, 243, 0.5) 16.35%,
+                      rgba(225, 225, 225, 0.5) 100%
+                    );
+                  "
+                  class="col-span-2 rounded-[25px] py-2 text-center text-[14px] font-[500]"
+                >
+                  Number
+                </div>
+                <div
+                  style="
+                    background: linear-gradient(
+                      180deg,
+                      rgba(245, 243, 243, 0.5) 16.35%,
+                      rgba(225, 225, 225, 0.5) 100%
+                    );
+                  "
+                  class="col-span-5 rounded-[25px] py-2 text-center text-[14px] font-[500]"
+                >
+                  Part Number
+                </div>
+                <div
+                  style="
+                    background: linear-gradient(
+                      180deg,
+                      rgba(245, 243, 243, 0.5) 16.35%,
+                      rgba(225, 225, 225, 0.5) 100%
+                    );
+                  "
+                  class="rounded-[25px] py-2 text-center text-[14px] font-[500]"
+                >
+                  #
+                </div>
+              </header>
+              <!-- carts -->
+              <div class="mt-4 lg:mt-6 lg:max-h-[800px] lg:overflow-auto">
+                <!-- cart -->
+                <div
+                  style="
+                    background: linear-gradient(
+                      108.13deg,
+                      rgba(255, 255, 255, 0.49) 0.32%,
+                      #ffffff 93.45%
+                    );
+                  "
+                  class="border-e-transparent rounded-[16px] border-[1px] border-[#0000001F] border-t-transparent py-3 px-4 shadow-[0px_10px_50px_0px_#0000001A] lg:flex lg:justify-between lg:border-transparent lg:px-3 lg:shadow-[8px_20px_200px_0px_#00000014]"
+                >
+                  <div class="flex justify-end lg:order-2">
+                    <div class="min-w-0 lg:max-w-[300px]">
+                      <p
+                        class="text-end text-[14px] font-[500] leading-4 lg:text-[16px] lg:font-[600]"
+                      >
+                        TME1205S
+                      </p>
+                      <p
+                        class="mt-2 text-[14px] font-[400] text-[#0F17298A]"
+                        dir="ltr"
+                      >
+                        DC to DC converter, 5V input, 5V output 200mA with SIP-4
+                      </p>
+                    </div>
+                    <img
+                      src="src/assets/images/Rectangle 46 (1).png"
+                      class="ms-5 h-[72px] w-[72px] rounded-[12px] lg:h-[110px] lg:w-[110px] lg:rounded-[6px]"
+                    />
+                    <div
+                      class="ms-3 lg:ms-[44px] text-[14px] font-[500] lg:text-[16px] lg:font-[600]"
+                    >
+                      1
+                    </div>
+                  </div>
+                  <div
+                    class="mt-4 flex items-center justify-between lg:order-1 lg:mt-0 lg:grid lg:grow lg:grid-cols-3"
+                  >
+                    <div
+                      class="border-e-transparent flex max-w-[117px] flex-col items-end rounded-[16px] border-[1px] border-[#0000001F] border-t-transparent p-2"
+                      style="
+                        background: linear-gradient(
+                          95.76deg,
+                          rgba(255, 255, 255, 0.12) 5.73%,
+                          #ffffff 76.97%
+                        );
+                      "
+                    >
+                      <h3 class="text-[13px] font-[400] lg:hidden">
+                        base price
+                      </h3>
+                      <div
+                        class="whitespace-nowrap text-[13px] font-[400] text-[#0F17298A]"
+                      >
+                        150,000 Rial
+                      </div>
+                    </div>
+                    <div
+                      class="border-e-transparent ms-3 flex max-w-[117px] flex-col items-end rounded-[16px] border-[1px] border-[#0000001F] border-t-transparent p-2"
+                      style="
+                        background: linear-gradient(
+                          95.76deg,
+                          rgba(255, 255, 255, 0.12) 5.73%,
+                          #ffffff 76.97%
+                        );
+                      "
+                    >
+                      <h3 class="text-[13px] font-[400] lg:hidden">
+                        base price
+                      </h3>
+                      <div
+                        class="whitespace-nowrap text-[13px] font-[400] text-[#0F17298A]"
+                      >
+                        150,000 Rial
+                      </div>
+                    </div>
+                    <div class="flex items-center">
+                      <div
+                        class="mx-3 h-[17.5px] w-[1px] bg-[#0F17291F] lg:hidden"
+                      ></div>
+                      <button
+                        class="flex h-6 w-6 items-center justify-center rounded-full bg-[#256CFA14]"
+                        id="increment"
+                      >
+                        <img
+                          src="src/assets/icons/plus-blue.svg"
+                          class="h-3 w-3"
+                        />
+                      </button>
+                      <div
+                        id="displayCounter"
+                        class="mx-3 flex h-[32px] w-[32px] justify-center rounded-[9px] border-b-[2px] border-[#0000003D] text-[16px] font-[600] lg:w-[48px] lg:items-center"
+                      >
+                        6
+                      </div>
+                      <button
+                        class="flex h-6 w-6 items-center justify-center rounded-full bg-[#256CFA14]"
+                        id="decrement"
+                      >
+                        <img
+                          src="src/assets/icons/minus-blue.svg"
+                          class="h-3 w-3"
+                        />
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <!-- cart -->
+                <div
+                  style="
+                    background: linear-gradient(
+                      108.13deg,
+                      rgba(255, 255, 255, 0.49) 0.32%,
+                      #ffffff 93.45%
+                    );
+                  "
+                  class="border-e-transparent rounded-[16px] border-[1px] border-[#0000001F] border-t-transparent py-3 px-4 shadow-[0px_10px_50px_0px_#0000001A] lg:mt-[24px] lg:flex lg:justify-between lg:border-transparent lg:px-3 lg:shadow-[8px_20px_200px_0px_#00000014]"
+                >
+                  <div class="flex justify-end lg:order-2">
+                    <div class="min-w-0 lg:max-w-[300px]">
+                      <p
+                        class="text-end text-[14px] font-[500] leading-4 lg:text-[16px] lg:font-[600]"
+                      >
+                        TME1205S
+                      </p>
+                      <p
+                        class="mt-2 text-[14px] font-[400] text-[#0F17298A]"
+                        dir="ltr"
+                      >
+                        DC to DC converter, 5V input, 5V output 200mA with SIP-4
+                      </p>
+                    </div>
+                    <img
+                      src="src/assets/images/Rectangle 46 (1).png"
+                      class="ms-5 h-[72px] w-[72px] rounded-[12px] lg:h-[110px] lg:w-[110px] lg:rounded-[6px]"
+                    />
+                    <div
+                      class="ms-3 lg:ms-[44px] text-[14px] font-[500] lg:text-[16px] lg:font-[600]"
+                    >
+                      1
+                    </div>
+                  </div>
+                  <div
+                    class="mt-4 flex items-center justify-between lg:order-1 lg:mt-0 lg:grid lg:grow lg:grid-cols-3"
+                  >
+                    <div
+                      class="border-e-transparent flex max-w-[117px] flex-col items-end rounded-[16px] border-[1px] border-[#0000001F] border-t-transparent p-2"
+                      style="
+                        background: linear-gradient(
+                          95.76deg,
+                          rgba(255, 255, 255, 0.12) 5.73%,
+                          #ffffff 76.97%
+                        );
+                      "
+                    >
+                      <h3 class="text-[13px] font-[400] lg:hidden">
+                        base price
+                      </h3>
+                      <div
+                        class="whitespace-nowrap text-[13px] font-[400] text-[#0F17298A]"
+                      >
+                        150,000 Rial
+                      </div>
+                    </div>
+                    <div
+                      class="border-e-transparent ms-3 flex max-w-[117px] flex-col items-end rounded-[16px] border-[1px] border-[#0000001F] border-t-transparent p-2"
+                      style="
+                        background: linear-gradient(
+                          95.76deg,
+                          rgba(255, 255, 255, 0.12) 5.73%,
+                          #ffffff 76.97%
+                        );
+                      "
+                    >
+                      <h3 class="text-[13px] font-[400] lg:hidden">
+                        base price
+                      </h3>
+                      <div
+                        class="whitespace-nowrap text-[13px] font-[400] text-[#0F17298A]"
+                      >
+                        150,000 Rial
+                      </div>
+                    </div>
+                    <div class="flex items-center">
+                      <div
+                        class="mx-3 h-[17.5px] w-[1px] bg-[#0F17291F] lg:hidden"
+                      ></div>
+                      <button
+                        class="flex h-6 w-6 items-center justify-center rounded-full bg-[#256CFA14]"
+                        id="increment"
+                      >
+                        <img
+                          src="src/assets/icons/plus-blue.svg"
+                          class="h-3 w-3"
+                        />
+                      </button>
+                      <div
+                        id="displayCounter"
+                        class="mx-3 flex h-[32px] w-[32px] justify-center rounded-[9px] border-b-[2px] border-[#0000003D] text-[16px] font-[600] lg:w-[48px] lg:items-center"
+                      >
+                        6
+                      </div>
+                      <button
+                        class="flex h-6 w-6 items-center justify-center rounded-full bg-[#256CFA14]"
+                        id="decrement"
+                      >
+                        <img
+                          src="src/assets/icons/minus-blue.svg"
+                          class="h-3 w-3"
+                        />
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <!-- cart -->
+                <div
+                  style="
+                    background: linear-gradient(
+                      108.13deg,
+                      rgba(255, 255, 255, 0.49) 0.32%,
+                      #ffffff 93.45%
+                    );
+                  "
+                  class="border-e-transparent rounded-[16px] border-[1px] border-[#0000001F] border-t-transparent py-3 px-4 shadow-[0px_10px_50px_0px_#0000001A] lg:mt-[24px] lg:flex lg:justify-between lg:border-transparent lg:px-3 lg:shadow-[8px_20px_200px_0px_#00000014]"
+                >
+                  <div class="flex justify-end lg:order-2">
+                    <div class="min-w-0 lg:max-w-[300px]">
+                      <p
+                        class="text-end text-[14px] font-[500] leading-4 lg:text-[16px] lg:font-[600]"
+                      >
+                        TME1205S
+                      </p>
+                      <p
+                        class="mt-2 text-[14px] font-[400] text-[#0F17298A]"
+                        dir="ltr"
+                      >
+                        DC to DC converter, 5V input, 5V output 200mA with SIP-4
+                      </p>
+                    </div>
+                    <img
+                      src="src/assets/images/Rectangle 46 (1).png"
+                      class="ms-5 h-[72px] w-[72px] rounded-[12px] lg:h-[110px] lg:w-[110px] lg:rounded-[6px]"
+                    />
+                    <div
+                      class="ms-3 lg:ms-[44px] text-[14px] font-[500] lg:text-[16px] lg:font-[600]"
+                    >
+                      1
+                    </div>
+                  </div>
+                  <div
+                    class="mt-4 flex items-center justify-between lg:order-1 lg:mt-0 lg:grid lg:grow lg:grid-cols-3"
+                  >
+                    <div
+                      class="border-e-transparent flex max-w-[117px] flex-col items-end rounded-[16px] border-[1px] border-[#0000001F] border-t-transparent p-2"
+                      style="
+                        background: linear-gradient(
+                          95.76deg,
+                          rgba(255, 255, 255, 0.12) 5.73%,
+                          #ffffff 76.97%
+                        );
+                      "
+                    >
+                      <h3 class="text-[13px] font-[400] lg:hidden">
+                        base price
+                      </h3>
+                      <div
+                        class="whitespace-nowrap text-[13px] font-[400] text-[#0F17298A]"
+                      >
+                        150,000 Rial
+                      </div>
+                    </div>
+                    <div
+                      class="border-e-transparent ms-3 flex max-w-[117px] flex-col items-end rounded-[16px] border-[1px] border-[#0000001F] border-t-transparent p-2"
+                      style="
+                        background: linear-gradient(
+                          95.76deg,
+                          rgba(255, 255, 255, 0.12) 5.73%,
+                          #ffffff 76.97%
+                        );
+                      "
+                    >
+                      <h3 class="text-[13px] font-[400] lg:hidden">
+                        base price
+                      </h3>
+                      <div
+                        class="whitespace-nowrap text-[13px] font-[400] text-[#0F17298A]"
+                      >
+                        150,000 Rial
+                      </div>
+                    </div>
+                    <div class="flex items-center">
+                      <div
+                        class="mx-3 h-[17.5px] w-[1px] bg-[#0F17291F] lg:hidden"
+                      ></div>
+                      <button
+                        class="flex h-6 w-6 items-center justify-center rounded-full bg-[#256CFA14]"
+                        id="increment"
+                      >
+                        <img
+                          src="src/assets/icons/plus-blue.svg"
+                          class="h-3 w-3"
+                        />
+                      </button>
+                      <div
+                        id="displayCounter"
+                        class="mx-3 flex h-[32px] w-[32px] justify-center rounded-[9px] border-b-[2px] border-[#0000003D] text-[16px] font-[600] lg:w-[48px] lg:items-center"
+                      >
+                        6
+                      </div>
+                      <button
+                        class="flex h-6 w-6 items-center justify-center rounded-full bg-[#256CFA14]"
+                        id="decrement"
+                      >
+                        <img
+                          src="src/assets/icons/minus-blue.svg"
+                          class="h-3 w-3"
+                        />
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <!-- cart -->
+                <div
+                  style="
+                    background: linear-gradient(
+                      108.13deg,
+                      rgba(255, 255, 255, 0.49) 0.32%,
+                      #ffffff 93.45%
+                    );
+                  "
+                  class="border-e-transparent rounded-[16px] border-[1px] border-[#0000001F] border-t-transparent py-3 px-4 shadow-[0px_10px_50px_0px_#0000001A] lg:mt-[24px] lg:flex lg:justify-between lg:border-transparent lg:px-3 lg:shadow-[8px_20px_200px_0px_#00000014]"
+                >
+                  <div class="flex justify-end lg:order-2">
+                    <div class="min-w-0 lg:max-w-[300px]">
+                      <p
+                        class="text-end text-[14px] font-[500] leading-4 lg:text-[16px] lg:font-[600]"
+                      >
+                        TME1205S
+                      </p>
+                      <p
+                        class="mt-2 text-[14px] font-[400] text-[#0F17298A]"
+                        dir="ltr"
+                      >
+                        DC to DC converter, 5V input, 5V output 200mA with SIP-4
+                      </p>
+                    </div>
+                    <img
+                      src="src/assets/images/Rectangle 46 (1).png"
+                      class="ms-5 h-[72px] w-[72px] rounded-[12px] lg:h-[110px] lg:w-[110px] lg:rounded-[6px]"
+                    />
+                    <div
+                      class="ms-3 lg:ms-[44px] text-[14px] font-[500] lg:text-[16px] lg:font-[600]"
+                    >
+                      1
+                    </div>
+                  </div>
+                  <div
+                    class="mt-4 flex items-center justify-between lg:order-1 lg:mt-0 lg:grid lg:grow lg:grid-cols-3"
+                  >
+                    <div
+                      class="border-e-transparent flex max-w-[117px] flex-col items-end rounded-[16px] border-[1px] border-[#0000001F] border-t-transparent p-2"
+                      style="
+                        background: linear-gradient(
+                          95.76deg,
+                          rgba(255, 255, 255, 0.12) 5.73%,
+                          #ffffff 76.97%
+                        );
+                      "
+                    >
+                      <h3 class="text-[13px] font-[400] lg:hidden">
+                        base price
+                      </h3>
+                      <div
+                        class="whitespace-nowrap text-[13px] font-[400] text-[#0F17298A]"
+                      >
+                        150,000 Rial
+                      </div>
+                    </div>
+                    <div
+                      class="border-e-transparent ms-3 flex max-w-[117px] flex-col items-end rounded-[16px] border-[1px] border-[#0000001F] border-t-transparent p-2"
+                      style="
+                        background: linear-gradient(
+                          95.76deg,
+                          rgba(255, 255, 255, 0.12) 5.73%,
+                          #ffffff 76.97%
+                        );
+                      "
+                    >
+                      <h3 class="text-[13px] font-[400] lg:hidden">
+                        base price
+                      </h3>
+                      <div
+                        class="whitespace-nowrap text-[13px] font-[400] text-[#0F17298A]"
+                      >
+                        150,000 Rial
+                      </div>
+                    </div>
+                    <div class="flex items-center">
+                      <div
+                        class="mx-3 h-[17.5px] w-[1px] bg-[#0F17291F] lg:hidden"
+                      ></div>
+                      <button
+                        class="flex h-6 w-6 items-center justify-center rounded-full bg-[#256CFA14]"
+                        id="increment"
+                      >
+                        <img
+                          src="src/assets/icons/plus-blue.svg"
+                          class="h-3 w-3"
+                        />
+                      </button>
+                      <div
+                        id="displayCounter"
+                        class="mx-3 flex h-[32px] w-[32px] justify-center rounded-[9px] border-b-[2px] border-[#0000003D] text-[16px] font-[600] lg:w-[48px] lg:items-center"
+                      >
+                        6
+                      </div>
+                      <button
+                        class="flex h-6 w-6 items-center justify-center rounded-full bg-[#256CFA14]"
+                        id="decrement"
+                      >
+                        <img
+                          src="src/assets/icons/minus-blue.svg"
+                          class="h-3 w-3"
+                        />
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <!-- cart -->
+                <div
+                  style="
+                    background: linear-gradient(
+                      108.13deg,
+                      rgba(255, 255, 255, 0.49) 0.32%,
+                      #ffffff 93.45%
+                    );
+                  "
+                  class="border-e-transparent rounded-[16px] border-[1px] border-[#0000001F] border-t-transparent py-3 px-4 shadow-[0px_10px_50px_0px_#0000001A] lg:mt-[24px] lg:flex lg:justify-between lg:border-transparent lg:px-3 lg:shadow-[8px_20px_200px_0px_#00000014]"
+                >
+                  <div class="flex justify-end lg:order-2">
+                    <div class="min-w-0 lg:max-w-[300px]">
+                      <p
+                        class="text-end text-[14px] font-[500] leading-4 lg:text-[16px] lg:font-[600]"
+                      >
+                        TME1205S
+                      </p>
+                      <p
+                        class="mt-2 text-[14px] font-[400] text-[#0F17298A]"
+                        dir="ltr"
+                      >
+                        DC to DC converter, 5V input, 5V output 200mA with SIP-4
+                      </p>
+                    </div>
+                    <img
+                      src="src/assets/images/Rectangle 46 (1).png"
+                      class="ms-5 h-[72px] w-[72px] rounded-[12px] lg:h-[110px] lg:w-[110px] lg:rounded-[6px]"
+                    />
+                    <div
+                      class="ms-3 lg:ms-[44px] text-[14px] font-[500] lg:text-[16px] lg:font-[600]"
+                    >
+                      1
+                    </div>
+                  </div>
+                  <div
+                    class="mt-4 flex items-center justify-between lg:order-1 lg:mt-0 lg:grid lg:grow lg:grid-cols-3"
+                  >
+                    <div
+                      class="border-e-transparent flex max-w-[117px] flex-col items-end rounded-[16px] border-[1px] border-[#0000001F] border-t-transparent p-2"
+                      style="
+                        background: linear-gradient(
+                          95.76deg,
+                          rgba(255, 255, 255, 0.12) 5.73%,
+                          #ffffff 76.97%
+                        );
+                      "
+                    >
+                      <h3 class="text-[13px] font-[400] lg:hidden">
+                        base price
+                      </h3>
+                      <div
+                        class="whitespace-nowrap text-[13px] font-[400] text-[#0F17298A]"
+                      >
+                        150,000 Rial
+                      </div>
+                    </div>
+                    <div
+                      class="border-e-transparent ms-3 flex max-w-[117px] flex-col items-end rounded-[16px] border-[1px] border-[#0000001F] border-t-transparent p-2"
+                      style="
+                        background: linear-gradient(
+                          95.76deg,
+                          rgba(255, 255, 255, 0.12) 5.73%,
+                          #ffffff 76.97%
+                        );
+                      "
+                    >
+                      <h3 class="text-[13px] font-[400] lg:hidden">
+                        base price
+                      </h3>
+                      <div
+                        class="whitespace-nowrap text-[13px] font-[400] text-[#0F17298A]"
+                      >
+                        150,000 Rial
+                      </div>
+                    </div>
+                    <div class="flex items-center">
+                      <div
+                        class="mx-3 h-[17.5px] w-[1px] bg-[#0F17291F] lg:hidden"
+                      ></div>
+                      <button
+                        class="flex h-6 w-6 items-center justify-center rounded-full bg-[#256CFA14]"
+                        id="increment"
+                      >
+                        <img
+                          src="src/assets/icons/plus-blue.svg"
+                          class="h-3 w-3"
+                        />
+                      </button>
+                      <div
+                        id="displayCounter"
+                        class="mx-3 flex h-[32px] w-[32px] justify-center rounded-[9px] border-b-[2px] border-[#0000003D] text-[16px] font-[600] lg:w-[48px] lg:items-center"
+                      >
+                        6
+                      </div>
+                      <button
+                        class="flex h-6 w-6 items-center justify-center rounded-full bg-[#256CFA14]"
+                        id="decrement"
+                      >
+                        <img
+                          src="src/assets/icons/minus-blue.svg"
+                          class="h-3 w-3"
+                        />
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <!-- cart -->
+                <div
+                  style="
+                    background: linear-gradient(
+                      108.13deg,
+                      rgba(255, 255, 255, 0.49) 0.32%,
+                      #ffffff 93.45%
+                    );
+                  "
+                  class="border-e-transparent rounded-[16px] border-[1px] border-[#0000001F] border-t-transparent py-3 px-4 shadow-[0px_10px_50px_0px_#0000001A] lg:mt-[24px] lg:flex lg:justify-between lg:border-transparent lg:px-3 lg:shadow-[8px_20px_200px_0px_#00000014]"
+                >
+                  <div class="flex justify-end lg:order-2">
+                    <div class="min-w-0 lg:max-w-[300px]">
+                      <p
+                        class="text-end text-[14px] font-[500] leading-4 lg:text-[16px] lg:font-[600]"
+                      >
+                        TME1205S
+                      </p>
+                      <p
+                        class="mt-2 text-[14px] font-[400] text-[#0F17298A]"
+                        dir="ltr"
+                      >
+                        DC to DC converter, 5V input, 5V output 200mA with SIP-4
+                      </p>
+                    </div>
+                    <img
+                      src="src/assets/images/Rectangle 46 (1).png"
+                      class="ms-5 h-[72px] w-[72px] rounded-[12px] lg:h-[110px] lg:w-[110px] lg:rounded-[6px]"
+                    />
+                    <div
+                      class="ms-3 lg:ms-[44px] text-[14px] font-[500] lg:text-[16px] lg:font-[600]"
+                    >
+                      1
+                    </div>
+                  </div>
+                  <div
+                    class="mt-4 flex items-center justify-between lg:order-1 lg:mt-0 lg:grid lg:grow lg:grid-cols-3"
+                  >
+                    <div
+                      class="border-e-transparent flex max-w-[117px] flex-col items-end rounded-[16px] border-[1px] border-[#0000001F] border-t-transparent p-2"
+                      style="
+                        background: linear-gradient(
+                          95.76deg,
+                          rgba(255, 255, 255, 0.12) 5.73%,
+                          #ffffff 76.97%
+                        );
+                      "
+                    >
+                      <h3 class="text-[13px] font-[400] lg:hidden">
+                        base price
+                      </h3>
+                      <div
+                        class="whitespace-nowrap text-[13px] font-[400] text-[#0F17298A]"
+                      >
+                        150,000 Rial
+                      </div>
+                    </div>
+                    <div
+                      class="border-e-transparent ms-3 flex max-w-[117px] flex-col items-end rounded-[16px] border-[1px] border-[#0000001F] border-t-transparent p-2"
+                      style="
+                        background: linear-gradient(
+                          95.76deg,
+                          rgba(255, 255, 255, 0.12) 5.73%,
+                          #ffffff 76.97%
+                        );
+                      "
+                    >
+                      <h3 class="text-[13px] font-[400] lg:hidden">
+                        base price
+                      </h3>
+                      <div
+                        class="whitespace-nowrap text-[13px] font-[400] text-[#0F17298A]"
+                      >
+                        150,000 Rial
+                      </div>
+                    </div>
+                    <div class="flex items-center">
+                      <div
+                        class="mx-3 h-[17.5px] w-[1px] bg-[#0F17291F] lg:hidden"
+                      ></div>
+                      <button
+                        class="flex h-6 w-6 items-center justify-center rounded-full bg-[#256CFA14]"
+                        id="increment"
+                      >
+                        <img
+                          src="src/assets/icons/plus-blue.svg"
+                          class="h-3 w-3"
+                        />
+                      </button>
+                      <div
+                        id="displayCounter"
+                        class="mx-3 flex h-[32px] w-[32px] justify-center rounded-[9px] border-b-[2px] border-[#0000003D] text-[16px] font-[600] lg:w-[48px] lg:items-center"
+                      >
+                        6
+                      </div>
+                      <button
+                        class="flex h-6 w-6 items-center justify-center rounded-full bg-[#256CFA14]"
+                        id="decrement"
+                      >
+                        <img
+                          src="src/assets/icons/minus-blue.svg"
+                          class="h-3 w-3"
+                        />
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <!-- cart -->
+                <div
+                  style="
+                    background: linear-gradient(
+                      108.13deg,
+                      rgba(255, 255, 255, 0.49) 0.32%,
+                      #ffffff 93.45%
+                    );
+                  "
+                  class="border-e-transparent rounded-[16px] border-[1px] border-[#0000001F] border-t-transparent py-3 px-4 shadow-[0px_10px_50px_0px_#0000001A] lg:mt-[24px] lg:flex lg:justify-between lg:border-transparent lg:px-3 lg:shadow-[8px_20px_200px_0px_#00000014]"
+                >
+                  <div class="flex justify-end lg:order-2">
+                    <div class="min-w-0 lg:max-w-[300px]">
+                      <p
+                        class="text-end text-[14px] font-[500] leading-4 lg:text-[16px] lg:font-[600]"
+                      >
+                        TME1205S
+                      </p>
+                      <p
+                        class="mt-2 text-[14px] font-[400] text-[#0F17298A]"
+                        dir="ltr"
+                      >
+                        DC to DC converter, 5V input, 5V output 200mA with SIP-4
+                      </p>
+                    </div>
+                    <img
+                      src="src/assets/images/Rectangle 46 (1).png"
+                      class="ms-5 h-[72px] w-[72px] rounded-[12px] lg:h-[110px] lg:w-[110px] lg:rounded-[6px]"
+                    />
+                    <div
+                      class="ms-3 lg:ms-[44px] text-[14px] font-[500] lg:text-[16px] lg:font-[600]"
+                    >
+                      1
+                    </div>
+                  </div>
+                  <div
+                    class="mt-4 flex items-center justify-between lg:order-1 lg:mt-0 lg:grid lg:grow lg:grid-cols-3"
+                  >
+                    <div
+                      class="border-e-transparent flex max-w-[117px] flex-col items-end rounded-[16px] border-[1px] border-[#0000001F] border-t-transparent p-2"
+                      style="
+                        background: linear-gradient(
+                          95.76deg,
+                          rgba(255, 255, 255, 0.12) 5.73%,
+                          #ffffff 76.97%
+                        );
+                      "
+                    >
+                      <h3 class="text-[13px] font-[400] lg:hidden">
+                        base price
+                      </h3>
+                      <div
+                        class="whitespace-nowrap text-[13px] font-[400] text-[#0F17298A]"
+                      >
+                        150,000 Rial
+                      </div>
+                    </div>
+                    <div
+                      class="border-e-transparent ms-3 flex max-w-[117px] flex-col items-end rounded-[16px] border-[1px] border-[#0000001F] border-t-transparent p-2"
+                      style="
+                        background: linear-gradient(
+                          95.76deg,
+                          rgba(255, 255, 255, 0.12) 5.73%,
+                          #ffffff 76.97%
+                        );
+                      "
+                    >
+                      <h3 class="text-[13px] font-[400] lg:hidden">
+                        base price
+                      </h3>
+                      <div
+                        class="whitespace-nowrap text-[13px] font-[400] text-[#0F17298A]"
+                      >
+                        150,000 Rial
+                      </div>
+                    </div>
+                    <div class="flex items-center">
+                      <div
+                        class="mx-3 h-[17.5px] w-[1px] bg-[#0F17291F] lg:hidden"
+                      ></div>
+                      <button
+                        class="flex h-6 w-6 items-center justify-center rounded-full bg-[#256CFA14]"
+                        id="increment"
+                      >
+                        <img
+                          src="src/assets/icons/plus-blue.svg"
+                          class="h-3 w-3"
+                        />
+                      </button>
+                      <div
+                        id="displayCounter"
+                        class="mx-3 flex h-[32px] w-[32px] justify-center rounded-[9px] border-b-[2px] border-[#0000003D] text-[16px] font-[600] lg:w-[48px] lg:items-center"
+                      >
+                        6
+                      </div>
+                      <button
+                        class="flex h-6 w-6 items-center justify-center rounded-full bg-[#256CFA14]"
+                        id="decrement"
+                      >
+                        <img
+                          src="src/assets/icons/minus-blue.svg"
+                          class="h-3 w-3"
+                        />
+                      </button>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div
-                style="
-                  background: linear-gradient(
-                    180deg,
-                    rgba(245, 243, 243, 0.5) 16.35%,
-                    rgba(225, 225, 225, 0.5) 100%
-                  );
-                "
-                class="col-span-2 rounded-[25px] py-2 text-center text-[14px] font-[500]"
-              >
-                base price
-              </div>
-              <div
-                style="
-                  background: linear-gradient(
-                    180deg,
-                    rgba(245, 243, 243, 0.5) 16.35%,
-                    rgba(225, 225, 225, 0.5) 100%
-                  );
-                "
-                class="col-span-2 rounded-[25px] py-2 text-center text-[14px] font-[500]"
-              >
-                Number
-              </div>
-              <div
-                style="
-                  background: linear-gradient(
-                    180deg,
-                    rgba(245, 243, 243, 0.5) 16.35%,
-                    rgba(225, 225, 225, 0.5) 100%
-                  );
-                "
-                class="col-span-5 rounded-[25px] py-2 text-center text-[14px] font-[500]"
-              >
-                Part Number
-              </div>
-              <div
-                style="
-                  background: linear-gradient(
-                    180deg,
-                    rgba(245, 243, 243, 0.5) 16.35%,
-                    rgba(225, 225, 225, 0.5) 100%
-                  );
-                "
-                class="rounded-[25px] py-2 text-center text-[14px] font-[500]"
-              >
-                #
-              </div>
-            </header>
-            <!-- carts -->
+            </main>
+            <!-- summry mobile -->
             <div
-              class="mt-4 max-h-[500px] overflow-auto lg:mt-6 lg:max-h-[800px]"
+              style="
+                background: linear-gradient(
+                  108.13deg,
+                  rgba(255, 255, 255, 0.49) 0.32%,
+                  #ffffff 93.45%
+                );
+              "
+              class="border-e-transparent mt-[34px] mb-[200px] w-full border-[1px] border-t-transparent px-4 py-3 lg:hidden"
             >
-              <!-- cart -->
-              <div
-                style="
-                  background: linear-gradient(
-                    108.13deg,
-                    rgba(255, 255, 255, 0.49) 0.32%,
-                    #ffffff 93.45%
-                  );
-                "
-                class="border-e-transparent rounded-[16px] border-[1px] border-[#0000001F] border-t-transparent py-3 px-4 shadow-[0px_10px_50px_0px_#0000001A] lg:flex lg:justify-between lg:border-transparent lg:px-3 lg:shadow-[8px_20px_200px_0px_#00000014]"
-              >
-                <div class="flex justify-end lg:order-2">
-                  <div class="min-w-0 lg:max-w-[300px]">
-                    <p
-                      class="text-end text-[14px] font-[500] leading-4 lg:text-[16px] lg:font-[600]"
-                    >
-                      TME1205S
-                    </p>
-                    <p
-                      class="mt-2 text-[14px] font-[400] text-[#0F17298A]"
-                      dir="ltr"
-                    >
-                      DC to DC converter, 5V input, 5V output 200mA with SIP-4
-                    </p>
-                  </div>
-                  <img
-                    src="src/assets/images/Rectangle 46 (1).png"
-                    class="ms-5 h-[72px] w-[72px] rounded-[12px] lg:h-[110px] lg:w-[110px] lg:rounded-[6px]"
-                  />
-                  <div
-                    class="ms-3 lg:ms-[44px] text-[14px] font-[500] lg:text-[16px] lg:font-[600]"
-                  >
-                    1
-                  </div>
-                </div>
-                <div
-                  class="mt-4 flex items-center justify-between lg:order-1 lg:mt-0 lg:grid lg:grow lg:grid-cols-3"
-                >
-                  <div
-                    class="border-e-transparent flex max-w-[117px] flex-col items-end rounded-[16px] border-[1px] border-[#0000001F] border-t-transparent p-2"
-                    style="
-                      background: linear-gradient(
-                        95.76deg,
-                        rgba(255, 255, 255, 0.12) 5.73%,
-                        #ffffff 76.97%
-                      );
-                    "
-                  >
-                    <h3 class="text-[13px] font-[400] lg:hidden">base price</h3>
-                    <div
-                      class="whitespace-nowrap text-[13px] font-[400] text-[#0F17298A]"
-                    >
-                      150,000 Rial
-                    </div>
-                  </div>
-                  <div
-                    class="border-e-transparent ms-3 flex max-w-[117px] flex-col items-end rounded-[16px] border-[1px] border-[#0000001F] border-t-transparent p-2"
-                    style="
-                      background: linear-gradient(
-                        95.76deg,
-                        rgba(255, 255, 255, 0.12) 5.73%,
-                        #ffffff 76.97%
-                      );
-                    "
-                  >
-                    <h3 class="text-[13px] font-[400] lg:hidden">base price</h3>
-                    <div
-                      class="whitespace-nowrap text-[13px] font-[400] text-[#0F17298A]"
-                    >
-                      150,000 Rial
-                    </div>
-                  </div>
-                  <div class="flex items-center">
-                    <div
-                      class="mx-3 h-[17.5px] w-[1px] bg-[#0F17291F] lg:hidden"
-                    ></div>
-                    <button
-                      class="flex h-6 w-6 items-center justify-center rounded-full bg-[#256CFA14]"
-                      id="increment"
-                    >
-                      <img
-                        src="src/assets/icons/plus-blue.svg"
-                        class="h-3 w-3"
-                      />
-                    </button>
-                    <div
-                      id="displayCounter"
-                      class="mx-3 flex h-[32px] w-[32px] justify-center rounded-[9px] border-b-[2px] border-[#0000003D] text-[16px] font-[600] lg:w-[48px] lg:items-center"
-                    >
-                      6
-                    </div>
-                    <button
-                      class="flex h-6 w-6 items-center justify-center rounded-full bg-[#256CFA14]"
-                      id="decrement"
-                    >
-                      <img
-                        src="src/assets/icons/minus-blue.svg"
-                        class="h-3 w-3"
-                      />
-                    </button>
-                  </div>
-                </div>
+              <div class="mb-4 flex items-center justify-between">
+                <p class="text-[14px] font-[500] text-[#616161]" dir="ltr">
+                  3 items
+                </p>
+                <p class="text-[15px] font-[600]">Summary</p>
               </div>
-              <!-- cart -->
-              <div
-                style="
-                  background: linear-gradient(
-                    108.13deg,
-                    rgba(255, 255, 255, 0.49) 0.32%,
-                    #ffffff 93.45%
-                  );
-                "
-                class="border-e-transparent rounded-[16px] border-[1px] border-[#0000001F] border-t-transparent py-3 px-4 shadow-[0px_10px_50px_0px_#0000001A] lg:mt-[24px] lg:flex lg:justify-between lg:border-transparent lg:px-3 lg:shadow-[8px_20px_200px_0px_#00000014]"
-              >
-                <div class="flex justify-end lg:order-2">
-                  <div class="min-w-0 lg:max-w-[300px]">
-                    <p
-                      class="text-end text-[14px] font-[500] leading-4 lg:text-[16px] lg:font-[600]"
-                    >
-                      TME1205S
-                    </p>
-                    <p
-                      class="mt-2 text-[14px] font-[400] text-[#0F17298A]"
-                      dir="ltr"
-                    >
-                      DC to DC converter, 5V input, 5V output 200mA with SIP-4
-                    </p>
-                  </div>
-                  <img
-                    src="src/assets/images/Rectangle 46 (1).png"
-                    class="ms-5 h-[72px] w-[72px] rounded-[12px] lg:h-[110px] lg:w-[110px] lg:rounded-[6px]"
-                  />
-                  <div
-                    class="ms-3 lg:ms-[44px] text-[14px] font-[500] lg:text-[16px] lg:font-[600]"
-                  >
-                    1
-                  </div>
-                </div>
-                <div
-                  class="mt-4 flex items-center justify-between lg:order-1 lg:mt-0 lg:grid lg:grow lg:grid-cols-3"
-                >
-                  <div
-                    class="border-e-transparent flex max-w-[117px] flex-col items-end rounded-[16px] border-[1px] border-[#0000001F] border-t-transparent p-2"
-                    style="
-                      background: linear-gradient(
-                        95.76deg,
-                        rgba(255, 255, 255, 0.12) 5.73%,
-                        #ffffff 76.97%
-                      );
-                    "
-                  >
-                    <h3 class="text-[13px] font-[400] lg:hidden">base price</h3>
-                    <div
-                      class="whitespace-nowrap text-[13px] font-[400] text-[#0F17298A]"
-                    >
-                      150,000 Rial
-                    </div>
-                  </div>
-                  <div
-                    class="border-e-transparent ms-3 flex max-w-[117px] flex-col items-end rounded-[16px] border-[1px] border-[#0000001F] border-t-transparent p-2"
-                    style="
-                      background: linear-gradient(
-                        95.76deg,
-                        rgba(255, 255, 255, 0.12) 5.73%,
-                        #ffffff 76.97%
-                      );
-                    "
-                  >
-                    <h3 class="text-[13px] font-[400] lg:hidden">base price</h3>
-                    <div
-                      class="whitespace-nowrap text-[13px] font-[400] text-[#0F17298A]"
-                    >
-                      150,000 Rial
-                    </div>
-                  </div>
-                  <div class="flex items-center">
-                    <div
-                      class="mx-3 h-[17.5px] w-[1px] bg-[#0F17291F] lg:hidden"
-                    ></div>
-                    <button
-                      class="flex h-6 w-6 items-center justify-center rounded-full bg-[#256CFA14]"
-                      id="increment"
-                    >
-                      <img
-                        src="src/assets/icons/plus-blue.svg"
-                        class="h-3 w-3"
-                      />
-                    </button>
-                    <div
-                      id="displayCounter"
-                      class="mx-3 flex h-[32px] w-[32px] justify-center rounded-[9px] border-b-[2px] border-[#0000003D] text-[16px] font-[600] lg:w-[48px] lg:items-center"
-                    >
-                      6
-                    </div>
-                    <button
-                      class="flex h-6 w-6 items-center justify-center rounded-full bg-[#256CFA14]"
-                      id="decrement"
-                    >
-                      <img
-                        src="src/assets/icons/minus-blue.svg"
-                        class="h-3 w-3"
-                      />
-                    </button>
-                  </div>
-                </div>
+              <img src="./src/assets/icons/border.svg" class="mb-4 w-full" />
+              <div class="mb-8 flex items-center justify-between">
+                <p class="text-[14px] font-[500]" dir="ltr">132,5,000 Rial</p>
+                <p class="text-[14px] font-[400] text-[#616161]">
+                  Total amount
+                </p>
               </div>
-              <!-- cart -->
-              <div
-                style="
-                  background: linear-gradient(
-                    108.13deg,
-                    rgba(255, 255, 255, 0.49) 0.32%,
-                    #ffffff 93.45%
-                  );
-                "
-                class="border-e-transparent rounded-[16px] border-[1px] border-[#0000001F] border-t-transparent py-3 px-4 shadow-[0px_10px_50px_0px_#0000001A] lg:mt-[24px] lg:flex lg:justify-between lg:border-transparent lg:px-3 lg:shadow-[8px_20px_200px_0px_#00000014]"
-              >
-                <div class="flex justify-end lg:order-2">
-                  <div class="min-w-0 lg:max-w-[300px]">
-                    <p
-                      class="text-end text-[14px] font-[500] leading-4 lg:text-[16px] lg:font-[600]"
-                    >
-                      TME1205S
-                    </p>
-                    <p
-                      class="mt-2 text-[14px] font-[400] text-[#0F17298A]"
-                      dir="ltr"
-                    >
-                      DC to DC converter, 5V input, 5V output 200mA with SIP-4
-                    </p>
-                  </div>
-                  <img
-                    src="src/assets/images/Rectangle 46 (1).png"
-                    class="ms-5 h-[72px] w-[72px] rounded-[12px] lg:h-[110px] lg:w-[110px] lg:rounded-[6px]"
-                  />
-                  <div
-                    class="ms-3 lg:ms-[44px] text-[14px] font-[500] lg:text-[16px] lg:font-[600]"
-                  >
-                    1
-                  </div>
-                </div>
-                <div
-                  class="mt-4 flex items-center justify-between lg:order-1 lg:mt-0 lg:grid lg:grow lg:grid-cols-3"
-                >
-                  <div
-                    class="border-e-transparent flex max-w-[117px] flex-col items-end rounded-[16px] border-[1px] border-[#0000001F] border-t-transparent p-2"
-                    style="
-                      background: linear-gradient(
-                        95.76deg,
-                        rgba(255, 255, 255, 0.12) 5.73%,
-                        #ffffff 76.97%
-                      );
-                    "
-                  >
-                    <h3 class="text-[13px] font-[400] lg:hidden">base price</h3>
-                    <div
-                      class="whitespace-nowrap text-[13px] font-[400] text-[#0F17298A]"
-                    >
-                      150,000 Rial
-                    </div>
-                  </div>
-                  <div
-                    class="border-e-transparent ms-3 flex max-w-[117px] flex-col items-end rounded-[16px] border-[1px] border-[#0000001F] border-t-transparent p-2"
-                    style="
-                      background: linear-gradient(
-                        95.76deg,
-                        rgba(255, 255, 255, 0.12) 5.73%,
-                        #ffffff 76.97%
-                      );
-                    "
-                  >
-                    <h3 class="text-[13px] font-[400] lg:hidden">base price</h3>
-                    <div
-                      class="whitespace-nowrap text-[13px] font-[400] text-[#0F17298A]"
-                    >
-                      150,000 Rial
-                    </div>
-                  </div>
-                  <div class="flex items-center">
-                    <div
-                      class="mx-3 h-[17.5px] w-[1px] bg-[#0F17291F] lg:hidden"
-                    ></div>
-                    <button
-                      class="flex h-6 w-6 items-center justify-center rounded-full bg-[#256CFA14]"
-                      id="increment"
-                    >
-                      <img
-                        src="src/assets/icons/plus-blue.svg"
-                        class="h-3 w-3"
-                      />
-                    </button>
-                    <div
-                      id="displayCounter"
-                      class="mx-3 flex h-[32px] w-[32px] justify-center rounded-[9px] border-b-[2px] border-[#0000003D] text-[16px] font-[600] lg:w-[48px] lg:items-center"
-                    >
-                      6
-                    </div>
-                    <button
-                      class="flex h-6 w-6 items-center justify-center rounded-full bg-[#256CFA14]"
-                      id="decrement"
-                    >
-                      <img
-                        src="src/assets/icons/minus-blue.svg"
-                        class="h-3 w-3"
-                      />
-                    </button>
-                  </div>
-                </div>
+              <div class="mb-8 flex items-center justify-between">
+                <p class="text-[14px] font-[500]" dir="ltr">132,5,000 Rial</p>
+                <p class="text-[14px] font-[400] text-[#616161]">Total</p>
               </div>
-              <!-- cart -->
-              <div
-                style="
-                  background: linear-gradient(
-                    108.13deg,
-                    rgba(255, 255, 255, 0.49) 0.32%,
-                    #ffffff 93.45%
-                  );
-                "
-                class="border-e-transparent rounded-[16px] border-[1px] border-[#0000001F] border-t-transparent py-3 px-4 shadow-[0px_10px_50px_0px_#0000001A] lg:mt-[24px] lg:flex lg:justify-between lg:border-transparent lg:px-3 lg:shadow-[8px_20px_200px_0px_#00000014]"
-              >
-                <div class="flex justify-end lg:order-2">
-                  <div class="min-w-0 lg:max-w-[300px]">
-                    <p
-                      class="text-end text-[14px] font-[500] leading-4 lg:text-[16px] lg:font-[600]"
-                    >
-                      TME1205S
-                    </p>
-                    <p
-                      class="mt-2 text-[14px] font-[400] text-[#0F17298A]"
-                      dir="ltr"
-                    >
-                      DC to DC converter, 5V input, 5V output 200mA with SIP-4
-                    </p>
-                  </div>
-                  <img
-                    src="src/assets/images/Rectangle 46 (1).png"
-                    class="ms-5 h-[72px] w-[72px] rounded-[12px] lg:h-[110px] lg:w-[110px] lg:rounded-[6px]"
-                  />
-                  <div
-                    class="ms-3 lg:ms-[44px] text-[14px] font-[500] lg:text-[16px] lg:font-[600]"
-                  >
-                    1
-                  </div>
-                </div>
-                <div
-                  class="mt-4 flex items-center justify-between lg:order-1 lg:mt-0 lg:grid lg:grow lg:grid-cols-3"
-                >
-                  <div
-                    class="border-e-transparent flex max-w-[117px] flex-col items-end rounded-[16px] border-[1px] border-[#0000001F] border-t-transparent p-2"
-                    style="
-                      background: linear-gradient(
-                        95.76deg,
-                        rgba(255, 255, 255, 0.12) 5.73%,
-                        #ffffff 76.97%
-                      );
-                    "
-                  >
-                    <h3 class="text-[13px] font-[400] lg:hidden">base price</h3>
-                    <div
-                      class="whitespace-nowrap text-[13px] font-[400] text-[#0F17298A]"
-                    >
-                      150,000 Rial
-                    </div>
-                  </div>
-                  <div
-                    class="border-e-transparent ms-3 flex max-w-[117px] flex-col items-end rounded-[16px] border-[1px] border-[#0000001F] border-t-transparent p-2"
-                    style="
-                      background: linear-gradient(
-                        95.76deg,
-                        rgba(255, 255, 255, 0.12) 5.73%,
-                        #ffffff 76.97%
-                      );
-                    "
-                  >
-                    <h3 class="text-[13px] font-[400] lg:hidden">base price</h3>
-                    <div
-                      class="whitespace-nowrap text-[13px] font-[400] text-[#0F17298A]"
-                    >
-                      150,000 Rial
-                    </div>
-                  </div>
-                  <div class="flex items-center">
-                    <div
-                      class="mx-3 h-[17.5px] w-[1px] bg-[#0F17291F] lg:hidden"
-                    ></div>
-                    <button
-                      class="flex h-6 w-6 items-center justify-center rounded-full bg-[#256CFA14]"
-                      id="increment"
-                    >
-                      <img
-                        src="src/assets/icons/plus-blue.svg"
-                        class="h-3 w-3"
-                      />
-                    </button>
-                    <div
-                      id="displayCounter"
-                      class="mx-3 flex h-[32px] w-[32px] justify-center rounded-[9px] border-b-[2px] border-[#0000003D] text-[16px] font-[600] lg:w-[48px] lg:items-center"
-                    >
-                      6
-                    </div>
-                    <button
-                      class="flex h-6 w-6 items-center justify-center rounded-full bg-[#256CFA14]"
-                      id="decrement"
-                    >
-                      <img
-                        src="src/assets/icons/minus-blue.svg"
-                        class="h-3 w-3"
-                      />
-                    </button>
-                  </div>
-                </div>
+              <div class="mb-4 flex items-center justify-between">
+                <p class="text-[14px] font-[500] text-[#256CFA]" dir="ltr">
+                  132,5,000 Rial
+                </p>
+                <p class="text-[14px] font-[400] text-[#616161]">Off</p>
               </div>
-              <!-- cart -->
-              <div
-                style="
-                  background: linear-gradient(
-                    108.13deg,
-                    rgba(255, 255, 255, 0.49) 0.32%,
-                    #ffffff 93.45%
-                  );
-                "
-                class="border-e-transparent rounded-[16px] border-[1px] border-[#0000001F] border-t-transparent py-3 px-4 shadow-[0px_10px_50px_0px_#0000001A] lg:mt-[24px] lg:flex lg:justify-between lg:border-transparent lg:px-3 lg:shadow-[8px_20px_200px_0px_#00000014]"
-              >
-                <div class="flex justify-end lg:order-2">
-                  <div class="min-w-0 lg:max-w-[300px]">
-                    <p
-                      class="text-end text-[14px] font-[500] leading-4 lg:text-[16px] lg:font-[600]"
-                    >
-                      TME1205S
-                    </p>
-                    <p
-                      class="mt-2 text-[14px] font-[400] text-[#0F17298A]"
-                      dir="ltr"
-                    >
-                      DC to DC converter, 5V input, 5V output 200mA with SIP-4
-                    </p>
-                  </div>
-                  <img
-                    src="src/assets/images/Rectangle 46 (1).png"
-                    class="ms-5 h-[72px] w-[72px] rounded-[12px] lg:h-[110px] lg:w-[110px] lg:rounded-[6px]"
-                  />
-                  <div
-                    class="ms-3 lg:ms-[44px] text-[14px] font-[500] lg:text-[16px] lg:font-[600]"
-                  >
-                    1
-                  </div>
-                </div>
-                <div
-                  class="mt-4 flex items-center justify-between lg:order-1 lg:mt-0 lg:grid lg:grow lg:grid-cols-3"
-                >
-                  <div
-                    class="border-e-transparent flex max-w-[117px] flex-col items-end rounded-[16px] border-[1px] border-[#0000001F] border-t-transparent p-2"
-                    style="
-                      background: linear-gradient(
-                        95.76deg,
-                        rgba(255, 255, 255, 0.12) 5.73%,
-                        #ffffff 76.97%
-                      );
-                    "
-                  >
-                    <h3 class="text-[13px] font-[400] lg:hidden">base price</h3>
-                    <div
-                      class="whitespace-nowrap text-[13px] font-[400] text-[#0F17298A]"
-                    >
-                      150,000 Rial
-                    </div>
-                  </div>
-                  <div
-                    class="border-e-transparent ms-3 flex max-w-[117px] flex-col items-end rounded-[16px] border-[1px] border-[#0000001F] border-t-transparent p-2"
-                    style="
-                      background: linear-gradient(
-                        95.76deg,
-                        rgba(255, 255, 255, 0.12) 5.73%,
-                        #ffffff 76.97%
-                      );
-                    "
-                  >
-                    <h3 class="text-[13px] font-[400] lg:hidden">base price</h3>
-                    <div
-                      class="whitespace-nowrap text-[13px] font-[400] text-[#0F17298A]"
-                    >
-                      150,000 Rial
-                    </div>
-                  </div>
-                  <div class="flex items-center">
-                    <div
-                      class="mx-3 h-[17.5px] w-[1px] bg-[#0F17291F] lg:hidden"
-                    ></div>
-                    <button
-                      class="flex h-6 w-6 items-center justify-center rounded-full bg-[#256CFA14]"
-                      id="increment"
-                    >
-                      <img
-                        src="src/assets/icons/plus-blue.svg"
-                        class="h-3 w-3"
-                      />
-                    </button>
-                    <div
-                      id="displayCounter"
-                      class="mx-3 flex h-[32px] w-[32px] justify-center rounded-[9px] border-b-[2px] border-[#0000003D] text-[16px] font-[600] lg:w-[48px] lg:items-center"
-                    >
-                      6
-                    </div>
-                    <button
-                      class="flex h-6 w-6 items-center justify-center rounded-full bg-[#256CFA14]"
-                      id="decrement"
-                    >
-                      <img
-                        src="src/assets/icons/minus-blue.svg"
-                        class="h-3 w-3"
-                      />
-                    </button>
-                  </div>
-                </div>
-              </div>
-              <!-- cart -->
-              <div
-                style="
-                  background: linear-gradient(
-                    108.13deg,
-                    rgba(255, 255, 255, 0.49) 0.32%,
-                    #ffffff 93.45%
-                  );
-                "
-                class="border-e-transparent rounded-[16px] border-[1px] border-[#0000001F] border-t-transparent py-3 px-4 shadow-[0px_10px_50px_0px_#0000001A] lg:mt-[24px] lg:flex lg:justify-between lg:border-transparent lg:px-3 lg:shadow-[8px_20px_200px_0px_#00000014]"
-              >
-                <div class="flex justify-end lg:order-2">
-                  <div class="min-w-0 lg:max-w-[300px]">
-                    <p
-                      class="text-end text-[14px] font-[500] leading-4 lg:text-[16px] lg:font-[600]"
-                    >
-                      TME1205S
-                    </p>
-                    <p
-                      class="mt-2 text-[14px] font-[400] text-[#0F17298A]"
-                      dir="ltr"
-                    >
-                      DC to DC converter, 5V input, 5V output 200mA with SIP-4
-                    </p>
-                  </div>
-                  <img
-                    src="src/assets/images/Rectangle 46 (1).png"
-                    class="ms-5 h-[72px] w-[72px] rounded-[12px] lg:h-[110px] lg:w-[110px] lg:rounded-[6px]"
-                  />
-                  <div
-                    class="ms-3 lg:ms-[44px] text-[14px] font-[500] lg:text-[16px] lg:font-[600]"
-                  >
-                    1
-                  </div>
-                </div>
-                <div
-                  class="mt-4 flex items-center justify-between lg:order-1 lg:mt-0 lg:grid lg:grow lg:grid-cols-3"
-                >
-                  <div
-                    class="border-e-transparent flex max-w-[117px] flex-col items-end rounded-[16px] border-[1px] border-[#0000001F] border-t-transparent p-2"
-                    style="
-                      background: linear-gradient(
-                        95.76deg,
-                        rgba(255, 255, 255, 0.12) 5.73%,
-                        #ffffff 76.97%
-                      );
-                    "
-                  >
-                    <h3 class="text-[13px] font-[400] lg:hidden">base price</h3>
-                    <div
-                      class="whitespace-nowrap text-[13px] font-[400] text-[#0F17298A]"
-                    >
-                      150,000 Rial
-                    </div>
-                  </div>
-                  <div
-                    class="border-e-transparent ms-3 flex max-w-[117px] flex-col items-end rounded-[16px] border-[1px] border-[#0000001F] border-t-transparent p-2"
-                    style="
-                      background: linear-gradient(
-                        95.76deg,
-                        rgba(255, 255, 255, 0.12) 5.73%,
-                        #ffffff 76.97%
-                      );
-                    "
-                  >
-                    <h3 class="text-[13px] font-[400] lg:hidden">base price</h3>
-                    <div
-                      class="whitespace-nowrap text-[13px] font-[400] text-[#0F17298A]"
-                    >
-                      150,000 Rial
-                    </div>
-                  </div>
-                  <div class="flex items-center">
-                    <div
-                      class="mx-3 h-[17.5px] w-[1px] bg-[#0F17291F] lg:hidden"
-                    ></div>
-                    <button
-                      class="flex h-6 w-6 items-center justify-center rounded-full bg-[#256CFA14]"
-                      id="increment"
-                    >
-                      <img
-                        src="src/assets/icons/plus-blue.svg"
-                        class="h-3 w-3"
-                      />
-                    </button>
-                    <div
-                      id="displayCounter"
-                      class="mx-3 flex h-[32px] w-[32px] justify-center rounded-[9px] border-b-[2px] border-[#0000003D] text-[16px] font-[600] lg:w-[48px] lg:items-center"
-                    >
-                      6
-                    </div>
-                    <button
-                      class="flex h-6 w-6 items-center justify-center rounded-full bg-[#256CFA14]"
-                      id="decrement"
-                    >
-                      <img
-                        src="src/assets/icons/minus-blue.svg"
-                        class="h-3 w-3"
-                      />
-                    </button>
-                  </div>
-                </div>
-              </div>
-              <!-- cart -->
-              <div
-                style="
-                  background: linear-gradient(
-                    108.13deg,
-                    rgba(255, 255, 255, 0.49) 0.32%,
-                    #ffffff 93.45%
-                  );
-                "
-                class="border-e-transparent rounded-[16px] border-[1px] border-[#0000001F] border-t-transparent py-3 px-4 shadow-[0px_10px_50px_0px_#0000001A] lg:mt-[24px] lg:flex lg:justify-between lg:border-transparent lg:px-3 lg:shadow-[8px_20px_200px_0px_#00000014]"
-              >
-                <div class="flex justify-end lg:order-2">
-                  <div class="min-w-0 lg:max-w-[300px]">
-                    <p
-                      class="text-end text-[14px] font-[500] leading-4 lg:text-[16px] lg:font-[600]"
-                    >
-                      TME1205S
-                    </p>
-                    <p
-                      class="mt-2 text-[14px] font-[400] text-[#0F17298A]"
-                      dir="ltr"
-                    >
-                      DC to DC converter, 5V input, 5V output 200mA with SIP-4
-                    </p>
-                  </div>
-                  <img
-                    src="src/assets/images/Rectangle 46 (1).png"
-                    class="ms-5 h-[72px] w-[72px] rounded-[12px] lg:h-[110px] lg:w-[110px] lg:rounded-[6px]"
-                  />
-                  <div
-                    class="ms-3 lg:ms-[44px] text-[14px] font-[500] lg:text-[16px] lg:font-[600]"
-                  >
-                    1
-                  </div>
-                </div>
-                <div
-                  class="mt-4 flex items-center justify-between lg:order-1 lg:mt-0 lg:grid lg:grow lg:grid-cols-3"
-                >
-                  <div
-                    class="border-e-transparent flex max-w-[117px] flex-col items-end rounded-[16px] border-[1px] border-[#0000001F] border-t-transparent p-2"
-                    style="
-                      background: linear-gradient(
-                        95.76deg,
-                        rgba(255, 255, 255, 0.12) 5.73%,
-                        #ffffff 76.97%
-                      );
-                    "
-                  >
-                    <h3 class="text-[13px] font-[400] lg:hidden">base price</h3>
-                    <div
-                      class="whitespace-nowrap text-[13px] font-[400] text-[#0F17298A]"
-                    >
-                      150,000 Rial
-                    </div>
-                  </div>
-                  <div
-                    class="border-e-transparent ms-3 flex max-w-[117px] flex-col items-end rounded-[16px] border-[1px] border-[#0000001F] border-t-transparent p-2"
-                    style="
-                      background: linear-gradient(
-                        95.76deg,
-                        rgba(255, 255, 255, 0.12) 5.73%,
-                        #ffffff 76.97%
-                      );
-                    "
-                  >
-                    <h3 class="text-[13px] font-[400] lg:hidden">base price</h3>
-                    <div
-                      class="whitespace-nowrap text-[13px] font-[400] text-[#0F17298A]"
-                    >
-                      150,000 Rial
-                    </div>
-                  </div>
-                  <div class="flex items-center">
-                    <div
-                      class="mx-3 h-[17.5px] w-[1px] bg-[#0F17291F] lg:hidden"
-                    ></div>
-                    <button
-                      class="flex h-6 w-6 items-center justify-center rounded-full bg-[#256CFA14]"
-                      id="increment"
-                    >
-                      <img
-                        src="src/assets/icons/plus-blue.svg"
-                        class="h-3 w-3"
-                      />
-                    </button>
-                    <div
-                      id="displayCounter"
-                      class="mx-3 flex h-[32px] w-[32px] justify-center rounded-[9px] border-b-[2px] border-[#0000003D] text-[16px] font-[600] lg:w-[48px] lg:items-center"
-                    >
-                      6
-                    </div>
-                    <button
-                      class="flex h-6 w-6 items-center justify-center rounded-full bg-[#256CFA14]"
-                      id="decrement"
-                    >
-                      <img
-                        src="src/assets/icons/minus-blue.svg"
-                        class="h-3 w-3"
-                      />
-                    </button>
-                  </div>
-                </div>
+              <img src="./src/assets/icons/border.svg" class="mb-4 w-full" />
+              <div class="flex items-center justify-between">
+                <p class="text-[14px] font-[500]" dir="ltr">132,5,000 Rial</p>
+                <p class="text-[14px] font-[400] text-[#616161]">
+                  The amount payable
+                </p>
               </div>
             </div>
           </div>
@@ -1147,7 +1218,7 @@
               #ffffff 100%
             );
           "
-          class="fixed bottom-16 flex h-[61px] w-full items-center justify-between rounded-t-[20px] border-t-2 border-[#0000001F] px-3 py-[10px] lg:hidden"
+          class="fixed bottom-[60px] flex h-[61px] w-full items-center justify-between rounded-t-[20px] border-t-2 border-[#0000001F] px-3 py-[10px] lg:hidden"
         >
           <div class="flex w-full items-center justify-between">
             <button
