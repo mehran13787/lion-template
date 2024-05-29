@@ -10,6 +10,7 @@ module.exports = {
     "category-mobile.html",
     "products-mobile",
     "shopping-cart.html",
+    "shopping-cart-second-step.html",
     "./src/**/*.{js,jsx,ts,tsx,html}",
   ],
   theme: {

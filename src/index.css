@@ -84,3 +84,19 @@ button.splide__pagination__page {
 .splide__track--nav > .splide__list > .splide__slide.is-active {
   border: none !important;
 }
+
+select option {
+  background-color: rgba(240, 245, 255, 0.9); /* Background color for options */
+  color: black; /* Text color for options */
+  padding: 10px; /* Padding for options */
+}
+
+/* Hide the default arrow for select */
+select::-ms-expand {
+  display: none;
+}
+
+/* Custom styles for select dropdown */
+select:focus {
+  outline: none;
+}
