@@ -12,6 +12,7 @@ module.exports = {
     "shopping-cart.html",
     "shopping-cart-second-step.html",
     "shopping-cart-third-step.html",
+    "successful-payment.html",
     "./src/**/*.{js,jsx,ts,tsx,html}",
   ],
   theme: {
