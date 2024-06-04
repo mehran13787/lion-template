@@ -11,6 +11,7 @@ module.exports = {
     "products-mobile",
     "shopping-cart.html",
     "shopping-cart-second-step.html",
+    "shopping-cart-third-step.html",
     "./src/**/*.{js,jsx,ts,tsx,html}",
   ],
   theme: {
